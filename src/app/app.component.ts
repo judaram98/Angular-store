@@ -11,4 +11,8 @@ export class AppComponent {
   btnDisabled = true;
   inputType = 'number';
   inputValue = 12345;
+
+  toggleButton() {
+    this.btnDisabled = !this.btnDisabled;
+  }
 }
