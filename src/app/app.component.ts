@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name = 'Juan';
   age = 18;
+  btnDisabled = true;
+  inputType = 'number';
+  inputValue = 12345;
 }
