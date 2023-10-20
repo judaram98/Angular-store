@@ -12,6 +12,10 @@ export class AppComponent {
   inputType = 'number';
   inputValue = 12345;
 
+  person = {
+    name: 'John',
+  };
+
   toggleButton() {
     this.btnDisabled = !this.btnDisabled;
   }
@@ -19,5 +23,10 @@ export class AppComponent {
   onScroll(event: Event) {
     const element = event.target as HTMLElement;
     console.log(element.scrollTop);
+  }
+
+  changeName(event: Event) {
+    const element = event.target as HTMLInputElement;
+    this.person.name = element.value;
   }
 }

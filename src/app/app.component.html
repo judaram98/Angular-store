@@ -12,6 +12,8 @@
     aperiam saepe consectetur iure sunt.
   </p>
 </div>
+<input type="text" [value]="person.name" (keyup)="changeName($event)" />
+<p>Nombre {{ person.name }}</p>
 
 <hr />
 <h1>Propiedades</h1>
