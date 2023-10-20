@@ -15,4 +15,9 @@ export class AppComponent {
   toggleButton() {
     this.btnDisabled = !this.btnDisabled;
   }
+
+  onScroll(event: Event) {
+    const element = event.target as HTMLElement;
+    console.log(element.scrollTop);
+  }
 }
