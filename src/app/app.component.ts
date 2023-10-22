@@ -14,6 +14,7 @@ export class AppComponent {
 
   person = {
     name: 'John',
+    age: 18,
   };
 
   toggleButton() {
